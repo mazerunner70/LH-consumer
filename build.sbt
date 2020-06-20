@@ -19,3 +19,6 @@ enablePlugins(DockerPlugin)
 //https://medium.com/jeroen-rosenberg/lightweight-docker-containers-for-scala-apps-11b99cf1a666
 mainClass in Compile := Some("core.Main")
 dockerBaseImage       := "openjdk:jre"
+
+packageName in Docker := "lh-consumer"
+dockerUsername        := Some("lh-helm")
